@@ -1,0 +1,42 @@
+{
+  "name": "petproject",
+  "version": "1.0.0",
+  "private": true,
+  "browser": {
+    "child_process": false,
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/yandex-metrika": "^1.4.0",
+    "@tinymce/tinymce-vue": "^3.2.8",
+    "@types/lodash": "^4.14.169",
+    "core-js": "^3.19.3",
+    "dotenv": "^16.0.1",
+    "element-ui": "^2.15.6",
+    "nuxt": "^2.15.8",
+    "nuxt-sass-resources-loader": "^2.0.5",
+    "swiper": "^6.8.4",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.15.6",
+    "@nuxt/typescript-build": "^2.0.4",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "sass-loader": "^7.2.0",
+    "sass": "^1.22.10",
+    "typescript": "^4.2.3"
+  }
+}

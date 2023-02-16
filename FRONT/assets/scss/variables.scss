@@ -1,0 +1,243 @@
+html > div {
+  display: none;
+}
+
+$font: #334155;
+$main: #8081bd;
+
+$red: #fc5a37;
+$orange: #ff8f00;
+$yellow: #f8d301;
+$green: #47bf70;
+$blue: #48d9ff;
+$darkBlue: #73a7e6;
+$violet: #af9bff;
+
+@mixin fontBasic() {
+  font-size: 16px;
+  color: $font;
+}
+
+@mixin fz($fz, $fz-1600) {
+  font-size: $fz;
+
+  @media (max-width: 1600px) {
+    font-size: $fz-1600;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+a,
+span,
+li,
+button,
+input,
+textarea,
+label {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.main-slider .el-carousel__arrow {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: none;
+  position: relative;
+  background: #8081bd;
+  background-color: #8081bd;
+  display: inline;
+  top: calc(100% - 70px);
+  left: calc(100% - 986px);
+
+  @media screen and (max-width: 1600px) {
+    left: calc(100% - 820px);
+  }
+
+  @media screen and (max-width: 1366px) {
+    left: calc(100% - 700px);
+    top: calc(100% - 60px);
+  }
+  @media screen and (max-width: 1200px) {
+    left: calc(100% - 650px);
+  }
+}
+
+.main-slider .el-carousel__arrow--right {
+  margin-left: 16px;
+}
+
+.main-slider .el-carousel {
+  z-index: 1;
+  height: 100%;
+}
+
+.main-slider .el-carousel__item {
+  height: 100%;
+}
+
+.main-slider .el-carousel__container {
+  height: 100%;
+}
+
+.welcome-slider .el-carousel__arrow {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+
+  background: #8081bd;
+  background-color: #8081bd;
+}
+
+.el-carousel__arrow i {
+  color: #fff;
+}
+
+.el-carousel__indicator.is-active button {
+  background-color: #8081bd;
+  height: 3px;
+}
+
+.parents-slider .el-carousel__arrow {
+  top: calc(100% - 30px);
+}
+
+.parents-slider .el-carousel__container {
+  height: 310px;
+}
+
+.parents-slider .el-carousel__arrow--left {
+  left: 0;
+}
+
+.el-notification__content p {
+  margin: 0;
+  text-align: left;
+}
+
+.el-upload-list--picture-card .el-upload-list__item-thumbnail {
+  width: auto;
+  height: 100%;
+}
+
+.swiper-navigation {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @media screen and (max-width: 991px) {
+    top: auto;
+    position: relative;
+    margin-top: 16px;
+  }
+}
+
+.slider-arrow {
+  width: 60px;
+  height: 60px;
+  background: #8081bd;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1366px) {
+    width: 55px;
+    height: 55px;
+  }
+
+  // @media screen and (max-width: 991px) {
+  //   width: 50px;
+  //   height: 50px;
+  // }
+
+  // @media screen and (max-width: 575px) {
+  //   width: 40px;
+  //   height: 40px;
+  // }
+
+  svg {
+    width: 40px;
+    height: 40px;
+    @media screen and (max-width: 1366px) {
+      width: 30px;
+      height: 30px;
+    }
+    // @media screen and (max-width: 991px) {
+    //   width: 25px;
+    //   height: 25px;
+    // }
+    // @media screen and (max-width: 575px) {
+    //   width: 20px;
+    //   height: 20px;
+    // }
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+.slider-arrow--next {
+  transform: rotate(-180deg);
+}
+
+.el-dialog__body {
+  height: 100%;
+}
+
+.swiper-photo--dialog .el-dialog .swiper-photo-open,
+.swiper-about--dialog .el-dialog .swiper-about-open,
+.swiper-basic--dialog .el-dialog .swiper-basic-open {
+  height: 100%;
+}
+
+.el-dialog__header {
+  padding: 0;
+}
+
+.el-dialog {
+  width: 90%;
+  margin-top: 0;
+  height: 90vh;
+  margin-top: 4vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+.el-dialog .swiper-container {
+  width: calc(100% - 140px);
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+}
+
+.swiper-container {
+  width: calc(100% - 140px);
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
+}
